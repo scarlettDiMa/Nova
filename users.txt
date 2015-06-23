@@ -1,0 +1,6 @@
+yunruow@yahoo.com,12345,123,M,45,DOTA2,123
+,,,,,DOTA2,
+530524320@qq.com,294910127,j8j8j8,M,99,DOTA2,123456789
+bowen@gmail.com,12345,ajjj,M,12,DOTA2,12345
+jobs@evernova.net,142345,tom,M,20,DOTA2,2062999929
+,,,M,,LOL,

@@ -1,0 +1,141 @@
+
+* {
+	font-size: 12pt;
+	color:#700;
+	font-family: "Verdana", "Geneva", sans-serif;
+}
+
+p{
+	text-align: center;
+	
+}
+a {
+	color: #700;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #FFA;
+}
+
+a img {
+	border: none;
+}
+
+#forms {
+/* 	text-align: center; */
+}
+
+
+
+#bannerarea {
+	margin-bottom: 2em;
+}
+
+body {
+		margin-top: 5em;
+	
+	background-color: white;
+/* 	TEXT-ALIGN: CENTER; */
+	
+/* 	padding-left: 1em; */
+	
+}
+
+body {
+    background-image: url("lina.jpg");
+    background-repeat: no-repeat;
+  	background-size:cover;
+    background-color: #cccccc;
+}
+
+
+body > div, form {
+	
+	margin: auto;
+	width: 35em;
+}
+
+div {
+	margin-top: 1em;
+	overflow: hidden;
+}
+
+fieldset {
+	background-color: #666;
+	border: 2px outset gray;
+	border-radius: 10px;
+	opacity: 0.8;
+}
+
+/* the bold text labels to the left of each form field */
+fieldset strong,
+ul strong,
+fieldset label.left,
+fieldset .column {
+	
+	float: left;
+	width: 11em;
+}
+
+h1 {
+	margin-top: 0em;
+}
+
+input[type="submit"] {
+	background-color: #999;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+legend {
+	background-color: white;
+	border: 2px outset gray;
+	padding: 0.2em;
+}
+
+.match {
+	margin-bottom: 3em;
+	overflow: hidden;
+}
+
+.match img {
+	width: 150px;
+	float: left;
+	margin-right: 10px;
+}
+
+.match p {
+	background-color: #E0E0FF;
+	clear: left;
+}
+
+.match ul {
+	padding-left: 160px;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0em;
+}
+
+ul li a img {
+	vertical-align: middle;
+}
+
+#w3c {
+	clear: both;
+	margin-top: 2em;
+}
+
+
+.topbg {
+  background: url(../images/topbg.jpg) repeat;
+  height: auto;
+  width: 100%;
+  -webkit-box-shadow: 5px 3px 2px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: 5px 3px 2px 0px rgba(0,0,0,0.55);
+  box-shadow: 5px 3px 2px 0px rgba(0,0,0,0.55);
+  position: relative;
+  z-index: 20;
+}

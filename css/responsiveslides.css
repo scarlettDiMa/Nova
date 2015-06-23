@@ -1,0 +1,82 @@
+/*! http://responsiveslides.com v1.53 by @viljamis */
+
+.rslides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	
+}
+.rslides li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+.rslides img {
+	display: block;
+	height: 100%;
+	float: left;
+	width: 100%;
+	border: 0;
+}
+
+@media screen and (max-width: 1024px) { 
+.rslides img {	display: block;	height: 563px; }
+#cssmenu > ul > li > a {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 15px 15px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 2;
+}
+.tournament_chat ul { width:559px; }
+.paragraph p {	font-size:28px;}
+}
+@media screen and (max-width: 768px) {
+	
+.rslides img {	display: block;	height: 300px; }
+.rslides {	height: auto !important;}
+.paragraph p {	margin-bottom:35px; }
+#cssmenu > ul > li > a {font-size: 14px;}
+.risingpubstar_bg { margin-bottom:30px;}
+.findmatch { margin-top:30px;}
+.tournament_chat ul { width:100%; }
+
+
+}
+@media screen and (max-width: 603px) {
+	
+	.rslides img {	display: block;	height: 300px; }
+
+	
+	}
+
+@media only screen and (max-width : 480px) {
+
+.rslides {	height: auto !important;}
+.rslides img {	display: block;	height: 300px; }
+.paragraph p {	margin-bottom:30px; }
+.paragraph {top:10%;}
+#simplemodal-container { width:70% !important;}
+
+
+ }
+@media only screen and (max-width : 320px) {
+	
+	.rslides img {	display: block;	height: 350px; }
+	.paragraph p {	margin-bottom:20px; }
+	
+}
