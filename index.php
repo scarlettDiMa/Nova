@@ -1,3 +1,9 @@
+<?php
+    require ('steamauth/steamauth.php');  
+  # You would uncomment the line beneath to make it refresh the data every time the page is loaded
+  #$_SESSION['steam_uptodate'] = false;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,9 +94,31 @@
          
 <!--          <li><a href='#'><span>GMAIL SIGN UP</span></a> </li> -->
       </ul>
-   </li>
-  
+   </li>  
 </ul>
+    <?php
+    if(!isset($_SESSION['steamid'])) {
+      steamlogin(); //login button
+    }  else {
+      echo "<div class='container' style='color:white'>";
+      include ('steamauth/userInfo.php');
+      echo "Hello " . $steamprofile['personaname'];
+      echo "here is your avatar: </br>" . '<img src="'.$steamprofile['avatarfull'].'" title="" alt="" /><br/>'; // Display their avatar!
+      echo "link to all your information:" . 
+      '<a href="http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=154D4B3E0F4EA647981E668CC71B10C3&steamids=' . $steamprofile['steamid'] . '">Profile</a>';
+      echo "<br/>";
+      echo "Your matching history:" . 
+      '<a href="https://api.steampowered.com/IDOTA2Match_570/GetMatchHistory/V001/?key=154D4B3E0F4EA647981E668CC71B10C3&account_id=' . $steamprofile['steamid'] . '">Match History</a>';
+          echo "<br/>";
+      echo "List of all heroes:" . 
+      '<a href="http://api.steampowered.com/IEconDOTA2_570/GetHeroes/v1/?key=154D4B3E0F4EA647981E668CC71B10C3">All Heroes</a>';
+      echo "</div>";
+
+      logoutbutton(); 
+    }  
+    ?>
+
+
 </div>
 <div class="spacer1"> </div>
 <!--nav end-->
